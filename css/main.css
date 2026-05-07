@@ -1,0 +1,173 @@
+body {
+  background-color: rgb(29, 36, 46);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+/*Header*/
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+.mainNav {
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+  font-size: 22px;
+}
+
+/*countdown*/
+.countDown {
+  background-color: rgb(31, 31, 31);
+  text-align: center;
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif, bold;
+}
+
+.countDown-text {
+  font-size: 22px;
+}
+
+/*modal & modaldetail*/
+.eventBox {
+  background-color: rgb(34, 33, 33);
+  border: 1px transparent;
+  border-radius: 0 0 16px 16px;
+  box-shadow: darkgray;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+  padding-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.eventBox img {
+  max-width: 100%;
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.eventBox p {
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.eventBox h2 {
+  font-size: 26px;
+}
+
+.eventBox:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 6px rgb(99, 99, 163);
+}
+
+.eventModal {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media (min-width: 600px) {
+  .eventModal {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .eventModal {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.card {
+  background: #19191d;
+  border: 1px transparent;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: #19191d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+}
+
+.card p {
+  font-size: 13px;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px black, 0 0 5px darkblue;
+}
+
+.modal-detail {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+  color: #222;
+  overflow-y: auto;
+  z-index: 1;
+  display: none;
+}
+
+.modal-detail.visible {
+  display: block;
+}
+
+.modalContent {
+  padding: 20px;
+}
+
+.modalImage img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.modalInfo h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.modalMain a {
+  color: black;
+}
+
+.modal-close {
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+}
