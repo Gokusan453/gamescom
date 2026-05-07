@@ -29,7 +29,3 @@ HTML · CSS · JavaScript
    ```
 
 3. Open `index.html` in your browser.
-
-## Source Code
-
-https://github.com/Gokusan453/gamescom.git
